@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: linear-gradient(to right, #0077cc, #00c6ff);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #005fa3, #00aaff);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  list-style: none;
+  background: #f0f8ff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark input,
+body.dark button {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark li {
+  background: #2c2c2c;
+}
+
+#toggleMode {
+  float: right;
+  margin-bottom: 10px;
+  background: #444;
+}
+li small {
+  color: #555;
+  font-size: 0.75rem;
+}
+body.dark li small {
+  color: #ccc;
+}
+.overdue {
+  background: crimson;
+  color: white;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+body.dark li {
+  background: #1d1d1d;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+input[type="text"],
+input[type="date"] {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+
+li button i {
+  font-size: 1rem;
+  color: crimson;
+}
+li span {
+  cursor: pointer;
+}
+
+body.dark input[type="text"],
+body.dark input[type="date"] {
+  background: #2a2a2a;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark input[type="text"]::placeholder {
+  color: #aaa;
+}
